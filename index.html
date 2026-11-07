@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of a frontend developer. Replace this description with a short summary of your work."
+    />
+    <meta name="theme-color" content="#f4f1ea" />
+    <title>Your Name — Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#top">Your Name</a>
+
+        <!-- This button is only visible on small screens. script.js toggles the menu. -->
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          data-nav-toggle
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu" data-nav-menu>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Frontend developer</p>
+          <!-- Replace "Your Name" everywhere it appears, including the page title. -->
+          <h1>Your Name</h1>
+          <p class="lede">
+            I build calm, accessible websites with clear type, careful spacing,
+            and interfaces that work on a phone as well as a desktop.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View projects</a>
+            <a class="button button-secondary" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Current focus">
+          <p class="eyebrow">Now</p>
+          <p class="hero-card-title">Open to junior frontend roles and freelance collaborations.</p>
+          <ul class="fact-list">
+            <li>
+              <span>Focus</span>
+              <strong>HTML, CSS, JavaScript</strong>
+            </li>
+            <li>
+              <span>Based in</span>
+              <strong>Your city</strong>
+            </li>
+            <li>
+              <span>Looking for</span>
+              <strong>Product teams that care about craft</strong>
+            </li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-heading">A short introduction</h2>
+        </div>
+        <div class="about-grid">
+          <div class="prose">
+            <p>
+              I am a frontend developer learning in public and shipping small,
+              complete interfaces. I care about readable code, semantic HTML,
+              and pages that stay understandable when styles or scripts fail.
+            </p>
+            <p>
+              This site is a working template. Swap the sample sentences,
+              project cards, and contact details for your own story. The layout,
+              navigation, and form behavior are already in place.
+            </p>
+          </div>
+          <ul class="about-points">
+            <li>
+              <h3>How I work</h3>
+              <p>Start with the content, then the layout, then the interaction.</p>
+            </li>
+            <li>
+              <h3>What I value</h3>
+              <p>Accessible markup, honest copy, and spacing that lets a page breathe.</p>
+            </li>
+            <li>
+              <h3>What I am learning</h3>
+              <p>Component thinking, responsive layout, and how to explain my decisions.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-heading">Tools I use to build the web</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-group">
+            <h3>Languages</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Interface</h3>
+            <ul>
+              <li>Responsive layout</li>
+              <li>Semantic markup</li>
+              <li>Forms and validation</li>
+              <li>CSS custom properties</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Practice</h3>
+            <ul>
+              <li>Git basics</li>
+              <li>Browser DevTools</li>
+              <li>Accessible navigation</li>
+              <li>Reading other people’s code</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-heading">Selected work</h2>
+          <p class="section-intro">
+            These cards are samples. Point each link at a live demo or a
+            repository once you have one.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card-featured">
+            <p class="project-index">01</p>
+            <h3>Trailmark</h3>
+            <p>
+              A trip-planning page that keeps the itinerary, map notes, and
+              packing list on one readable screen.
+            </p>
+            <ul class="tag-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <p class="project-links">
+              <a href="#" data-placeholder-link>Live demo</a>
+              <a href="#" data-placeholder-link>Source</a>
+            </p>
+          </article>
+
+          <article class="project-card">
+            <p class="project-index">02</p>
+            <h3>Harbor Invoice</h3>
+            <p>
+              A small billing screen for a freelance studio, with a clear total
+              and a printable layout.
+            </p>
+            <ul class="tag-list">
+              <li>CSS Grid</li>
+              <li>Forms</li>
+            </ul>
+            <p class="project-links">
+              <a href="#" data-placeholder-link>Live demo</a>
+              <a href="#" data-placeholder-link>Source</a>
+            </p>
+          </article>
+
+          <article class="project-card">
+            <p class="project-index">03</p>
+            <h3>Signal Board</h3>
+            <p>
+              A status dashboard that stays usable with a keyboard and keeps
+              color from being the only signal.
+            </p>
+            <ul class="tag-list">
+              <li>Accessibility</li>
+              <li>Vanilla JS</li>
+            </ul>
+            <p class="project-links">
+              <a href="#" data-placeholder-link>Live demo</a>
+              <a href="#" data-placeholder-link>Source</a>
+            </p>
+          </article>
+        </div>
+        <p class="form-status" data-placeholder-status role="status"></p>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-grid">
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Contact</p>
+              <h2 id="contact-heading">Say hello</h2>
+            </div>
+            <p class="section-intro">
+              The form checks the fields in the browser and confirms that the
+              message is ready. Connect it to a form service when you want mail
+              delivered to your inbox.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <span>Email</span>
+                <a href="mailto:you@example.com">you@example.com</a>
+              </li>
+              <li>
+                <span>GitHub</span>
+                <!-- Replace the href with your profile URL. -->
+                <a href="https://github.com" rel="noopener noreferrer">github.com/your-handle</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+              <p class="field-error" id="name-error"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <p class="field-error" id="email-error"></p>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <p class="field-error" id="message-error"></p>
+            </div>
+            <button class="button button-primary" type="submit">Send message</button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year>2026</span> Your Name. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+  </body>
+</html>
